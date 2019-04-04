@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>I am trying django base.html template</title>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+        <!-- <h3>This is the content that will be uniform within all of the webpages</h3> -->
+        {%block content%}
+        
+        replaces anything that comes here
+
+        {%endblock%}
+
+        <h4>Below contents are from the next block</h4>
+        {% block next%}
+
+        replace me 
+
+        {%endblock next%}
+    </body>
+</html>

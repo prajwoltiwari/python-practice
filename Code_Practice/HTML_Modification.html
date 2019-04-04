@@ -1,0 +1,216 @@
+<div class="well tab-content">
+                    
+                      <div class="tab-pane active" id="post-object-form">
+                        
+                          <form action="/api/authentication/driver/register/" method="POST" enctype="multipart/form-data" class="form-horizontal" novalidate="">
+                            <fieldset>
+                              <input type="hidden" name="csrfmiddlewaretoken" value="V6X81HXY37bRZGtefeJVEsR55fleQqu7SP9UEtEdnL4pCjJ1NcxZDlbggim4pRwa">
+                              
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      First name
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="first_name" class="form-control" type="text" value="">
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Last name
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="last_name" class="form-control" type="text" value="">
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Email
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="email" class="form-control" type="email" value="">
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Password
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="password" class="form-control" type="text" value="">
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Phone
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="phone" class="form-control" type="text" value="">
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    
+
+<div class="form-group">
+  
+    <label class="col-sm-2 control-label ">
+      Gender
+    </label>
+  
+
+  <div class="col-sm-10">
+    <select class="form-control" name="gender">
+      
+      
+          
+            <option value="Male">Male</option>
+          
+      
+          
+            <option value="Female">Female</option>
+          
+      
+          
+            <option value="Others">Others</option>
+          
+      
+    </select>
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+  
+    <div class="form-group ">
+  
+    <label class="col-sm-2 control-label ">
+      Country code
+    </label>
+  
+
+  <div class="col-sm-10">
+    <input name="country_code" class="form-control" type="text" value="">
+
+    
+
+    
+  </div>
+</div>
+
+  
+
+
+                              <div class="form-actions">
+                                <button class="btn btn-primary" title="Make a POST request on the Driver Create Api resource">POST</button>
+                              </div>
+                            </fieldset>
+                          </form>
+                        
+                      </div>
+                    
+
+                    <div class="tab-pane" id="post-generic-content-form">
+                      
+                        <form action="/api/authentication/driver/register/" method="POST" class="form-horizontal">
+                          <fieldset>
+                            
+
+
+  <div class="form-group">
+    <label for="id__content_type" class="col-sm-2 control-label">Media type:</label>
+    <div class="col-sm-10">
+      <select name="_content_type" data-override="content-type" id="id__content_type" class="form-control">
+  <option value="application/json" selected="">application/json</option>
+
+  <option value="application/x-www-form-urlencoded">application/x-www-form-urlencoded</option>
+
+  <option value="multipart/form-data">multipart/form-data</option>
+
+</select>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="id__content" class="col-sm-2 control-label">Content:</label>
+    <div class="col-sm-10">
+      <textarea name="_content" cols="40" rows="10" data-override="content" id="id__content" class="form-control">{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "password": "",
+    "phone": "",
+    "gender": null,
+    "country_code": ""
+}</textarea>
+      <span class="help-block"></span>
+    </div>
+  </div>
+
+
+                            <div class="form-actions">
+                              <button class="btn btn-primary" title="Make a POST request on the Driver Create Api resource">POST</button>
+                            </div>
+                          </fieldset>
+                        </form>
+                      
+                    </div>
+                  </div>

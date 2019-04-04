@@ -1,0 +1,6 @@
+{
+  "phone": "9860832382",
+  "password": "Gabbu@123",
+  "type": "driver",
+  "country_code": "+977"
+}

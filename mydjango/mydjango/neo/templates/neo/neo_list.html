@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for i in object_list %}
+    <p><a href="{% url 'neo:neo_create_id' i.id %}">{{i.name}}</a> </p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+<h1>Home page from a template</h1>
+<h3>This is awesome</h3>
+<p1>Gmail: prajwol.pt@gmail.com</p1>
+
+<h3>
+    {{ PJ }}, {{ Shekhar_dai|upper }}
+    {{ Aashish_dai|capfirst }}
+</h3>
+
+<ul>
+    <li>Item1</li>
+    <li>Item2</li>
+</ul>
+
+<ul>
+{% for all_items in Your_List %}
+    {% if all_items == 5656 %}
+        <li>{{ forloop.counter }}. {{ all_items|add:22 }}</li>
+    {% elif all_items == 'Prajwol did this!!!' %}
+        <li>{{ forloop.counter }}. You're welcome Prajwol</li>
+    {% else %}
+        <li>{{ forloop.counter }}. {{ all_items }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+
+{%endblock%}
